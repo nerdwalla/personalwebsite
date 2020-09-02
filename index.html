@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./public/style/style.css">
     <script src="./public/js/theme.js">
     </script>
+
     <title>NerdWalla</title>
 </head>
 
@@ -16,18 +17,26 @@
     <section id="header">
         <div class="theme-div">
             <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <input id="slider" type="checkbox" onchange="toggleTheme()">
                 <span class="slider round"></span>
             </label>
         </div>
     </section>
+    
     <!-- intro Section  -->
     <section id="intro">
+        
         <div class="intro container">
-            <div>
+            <div style="display: block;">
                 <h1>Hello, <span></span></h1>
-                <h1>My Name is <span></span></h1>
-                <h1>Venkat <span></span></h1>
+                <h1>I am <span></span></h1>
+                <div class="slidingVertical">
+                    <span>a Nerd.</span>
+                    <span>a Coffee Drinker.</span>
+                    <span>an Amatuer Photographer.</span>
+                    <span>a Coder.</span>
+                    <span>VENKAT.</span>
+                </div>
             </div>
             <div class="intro_info">
                 <p>
@@ -40,14 +49,14 @@
                 <ul class="sci">
                     <li><a href="https://github.com/nerdwalla" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
                     <li><a href="https://www.instagram.com/nerdwalla/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
-                    <li><a href="https://github.com/nerdwalla" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-                    </li>
+                    <li><a href="https://github.com/nerdwalla" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
                 </ul>
             </div>
         </div>
 
     </section>
     <!-- End intro Section  -->
+    
 </body>
 
 </html>
