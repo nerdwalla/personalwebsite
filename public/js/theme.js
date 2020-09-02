@@ -10,6 +10,7 @@ function toggleTheme() {
         setTheme('theme-light');
     } else {
         setTheme('theme-dark');
+        
     }
 }
 
