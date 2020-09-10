@@ -1,63 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="theme-light">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./public/style/style.css">
-    <script src="./public/js/theme.js">
-    </script>
-    <link rel="icon" href="public/img/nerd-512.png">
-    <title>NerdWalla</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./public/style/style.css">
+	<script src="./public/js/theme.js">
+	</script>
+	<link rel="icon" href="public/img/nerd-512.png">
+	<title>NerdWalla</title>
 </head>
 
 <body>
-    <section id="header">
-        <div class="theme-div">
-            <label id="switch" class="switch">
-                <input id="slider" type="checkbox" onchange="toggleTheme()">
-                <span class="slider round"></span>
-            </label>
-        </div>
-    </section>
-    
-    <!-- intro Section  -->
-    <section id="intro">
-        
-        <div class="intro container">
-            <div style="display: block;">
-                <h1>Hello, <span></span></h1>
-                <h1>I am <span></span></h1>
-                <div class="slidingVertical">
-                    <span>a Nerd.</span>
-                    <span>a Coffee Drinker.</span>
-                    <span>an Amatuer Photographer.</span>
-                    <span>a Coder.</span>
-                    <span>VENKAT.</span>
-                </div>
-            </div>
-            <div class="intro_info">
-                <p>
-                    I'm a senior oftware engineer, currently working as Tech Lead at an Insurance based IT company.
-                    I am currently based in Madison, WI I am a full stack developer, specializing in building (and
-                    occasionally designing) exceptional websites, applications, and everything in between.
-                </p>
-            </div>
-            <div class="socials">
-                <ul class="sci">
-                    <li><a href="https://github.com/nerdwalla" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                    <li><a href="https://www.instagram.com/nerdwalla/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
-                    <li><a href="https://github.com/nerdwalla" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-                    <li><a href="mailto:nerdwalla@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
-                </ul>
-            </div>
-        </div>
+	<!-- <div class="open">
+			<div class="layer"></div>
+			<div class="layer"></div>
+		</div> -->
+	<section id="home">
+		<div class="header">
+			<h2 class="logo"></h2>
+			<ul>
+				<!-- <li>
+						<a href="#" class="active">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Services</a>
+					</li>
+					<li>
+						<a href="#">Our Work</a>
+					</li> 
+				<li>
+					<a href="#">Portfolio</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>-->
+				<li>
+					<!-- <div class="theme-div"> -->
+						<label id="switch" class="switch">
+							<input id="slider" type="checkbox" onchange="toggleTheme()" checked="true">
+							<span class="slider round"></span>
+						</label>
+					<!-- </div> -->
+				</li>
+			</ul>
+			
+		</div>
+		<div class="bannerText">
+			<h2>Hello!</h2><br>
+			<h3>I am</h3>
+			<div class="slidingVertical">
+				<span>a Nerd.</span>
+				<span>a Coffee Drinker.</span>
+				<span>an Amatuer Photographer.</span>
+				<span>a Coder.</span>
+				<span>VENKAT.</span>
+			</div>
+		</div>
+		<div class="bannerInfo">
+			<p>
+				I'm a senior oftware engineer, currently working as Tech Lead at an Insurance based IT company.
+				I am currently based in Madison, WI I am a full stack developer, specializing in building (and
+				occasionally designing) exceptional websites, applications, and everything in between.
+			</p>
+		</div>
+		<ul class="sci">
+			<li><a href="https://github.com/nerdwalla" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			<li><a href="https://www.instagram.com/nerdwalla/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+			</li>
+			<li><a href="https://github.com/nerdwalla" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+			<li><a href="mailto:nerdwalla@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
+		</ul>
 
-    </section>
-    <!-- End intro Section  -->
-    
+	</section>
+
+	<!-- portfolio Section -->
+	<!-- <section id="portfolio">
+		<div class="portfolio container">
+			<h2>RECENT PROJECTS</h2><br>
+			<div class="all-projects">
+				<div class="project-item">
+				  <div class="project-info">
+					<h1>Sentiment Analyzer</h1>
+					<p>Analyzing Sentiment of Yelp Reviews of business</p>
+				  </div>
+				  <div class="project-img">
+					<img src="./img/sentiment-analyzer.png" alt="img">
+				  </div>
+				</div>
+				<div class="project-item">
+				  <div class="project-info">
+					<h1>Paradise Ice Cream</h1>
+					<p>Website for an Ice Cream shoppe</p>
+				  </div>
+				  <div class="project-img">
+					<img src="./img/paradise-ice-cream.png" alt="img">
+				  </div>
+				</div>
+			  </div>
+		</div>
+	</section> -->
+	<!-- End portfolio Section -->
 </body>
 
 </html>
