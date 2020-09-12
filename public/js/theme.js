@@ -1,3 +1,7 @@
+window.addEventListener("load", function(){
+    setTheme('theme-light');
+});
+
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
