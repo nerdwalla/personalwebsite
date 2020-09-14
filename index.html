@@ -5,10 +5,10 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./public/style/style.css">
+	<link rel="stylesheet" href="./public/style/scroll.css">
 	<script src="./public/js/theme.js">
+
 	</script>
-	<!-- <script src="./public/js/app.js">
-	</script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<link rel="icon" href="public/img/nerd-512.png">
 	<title>NerdWalla</title>
@@ -53,7 +53,7 @@
 			</div>
 			<div class="bannerInfo">
 				<p>
-					I'm a senior software engineer based in Madison, WI. I am currently a Tech Lead in IT department of
+					I am a senior software engineer based in Madison, WI. I am currently a Tech Lead in IT department of
 					an
 					Insurance company. I am a full stack developer, specializing in building (and
 					occasionally designing) exceptional websites, applications, mobile apps and everything in between.
@@ -65,14 +65,12 @@
 	</section>
 
 	<!-- portfolio Section -->
-	<section id="portfolio">
+	<section id="portfolio" class="portfolio-section hideme">
 		<div class="portfolio container">
-			<br />
-			<h2>RECENT PROJECTS</h2>
 
-			<!-- <div class="bannerInfo"> -->
+			<h2>RECENT PROJECTS</h2>
 			<div class="row">
-				<div class="column">
+				<div class="column module">
 					<a href="https://bhy-sentiment-analyzer.herokuapp.com" target="_blank">
 						<div class="content">
 							<img src="./public/img/analyzer.png" style="width:100%">
@@ -82,7 +80,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="column">
+				<div class="column module">
 					<a href="http://paradiseislandicecream.com" target="_blank">
 						<div class="content">
 							<img src="./public/img/icecream.png" style="width:100%">
@@ -93,23 +91,23 @@
 					</a>
 				</div>
 			</div>
-			<!-- </div> -->
+
 		</div>
 	</section>
 	<!-- End portfolio Section -->
 
 	<!-- Contact Section -->
-	<section id="contact">
+	<section id="contact" class="contact-section hideme">
 		<div class="contact container">
 			<div class="contact-row">
-				<div class="contact-column">
+				<div class="contact-column module">
 					<div class="contact-content">
 						<h2>Contact</h2>
 					</div>
 				</div>
 			</div>
 			<div class="contact-row">
-				<div class="contact-column">
+				<div class="contact-column module">
 					<div class="contact-content">
 						<a href="mailto:nerdwalla@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
 					</div>
@@ -129,7 +127,7 @@
 	</ul>
 
 	<script src="./public/js/app.js"></script>
-
+	<script src="./public/js/scroll.js"></script>
 </body>
 
 </html>
