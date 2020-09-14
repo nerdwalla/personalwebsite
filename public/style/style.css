@@ -3,21 +3,34 @@
 	--color-background: #fbfbfe;
 	--color-font: #000000;
 	--color-text-reveal: #00abe9;
+	--color-image-overlay: #a8a8a8;
 }
 
 .theme-dark {
 	--color-background: #000;
 	--color-font: #ffffff;
 	--color-text-reveal: #00abe9;
+	--color-image-overlay: #a8a8a8;
 }
 
-body {
+html, body {
+	max-width: 100vw;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	background: var(--color-background);
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+/* body {
 	margin: 0;
 	padding: 0;
 	max-width: 100vw;
+	width: 100vw;
 	font-family: 'Montserrat', sans-serif;
 	background: var(--color-background);
-}
+} */
 
 section {
 	min-height: 100vh;
@@ -26,7 +39,7 @@ section {
 
 .container {
 	min-height: 100vh;
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -38,7 +51,7 @@ section {
 	top: 50%;
 	left: 10%;
 	transform: translateY(-50%);
-	max-width: 700px;
+	max-width: 70em;
 }
 
 .bannerText h2, .bannerText h3 {
@@ -211,7 +224,7 @@ section {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	height: 80px;
 	padding-top: 0%;
 	padding-bottom: 0%;
@@ -222,6 +235,12 @@ section {
 	justify-content: space-between;
 	box-sizing: border-box;
 	z-index: 1000;
+	
+	/* animation: fadeInRight 2s linear forwards;
+	/* animation-delay: 2s; */
+	/* background-color: transparent;
+	background-image: linear-gradient(transparent, var(--color-font)); */
+	/* opacity: 0.1; */ 
 }
 
 .header .theme-div {
@@ -708,19 +727,38 @@ input:checked+.slider:before {
 	color: var(--color-font);
 }
 
+.projects-container {
+	width: 100%;
+}
+
+.projects-container>h2 {
+	font-size: 3em;
+	font-weight: 800;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	color: var(--color-font);
+}
+
 @media screen and (max-width: 1024px) {
-	html {
+	html, body {
+		max-width: 100vw;
+		width: 100%;
+		/* max-height: 100vh; */
+		/* width: 100%;
+		height: 100%; */
+		margin: 0px;
+		padding: 0px;
 		font-size: 12px;
-		/* max-width: 100vw; */
-		max-height: 100vh;
+		overflow-x: hidden;
 	}
 	.bannerText {
-		width: 100%;
+		max-width: 70em;
 		top: 30%;
 		/* font-size: 1.8em; */
 	}
 	.bannerInfo {
-		width: 70%;
+		width: 70em;
 		top: 50%;
 		left: 10%;
 		padding: 10px;
@@ -730,7 +768,7 @@ input:checked+.slider:before {
 	ul.sci {
 		position: relative;
 		bottom: 15px;
-		width: 100%;
+		/* width: 100%; */
 		display: inline-block;
 		padding: 0;
 		flex-direction: row;
@@ -738,7 +776,7 @@ input:checked+.slider:before {
 	}
 	ul.sci li {
 		list-style: none;
-		padding-left: 10%;
+		margin-left: 10%;
 		text-align: center;
 		animation: fadeInBottom 0.5s linear forwards;
 		display: inline-block;
@@ -770,10 +808,15 @@ input:checked+.slider:before {
 }
 
 @media screen and (max-width: 992px) {
-	html {
+	html, body {
+		max-width: 100vw;
+		width: 100%;
+		/* width: 100%;
+		height: 100%; */
+		margin: 0px;
+		padding: 0px;
 		font-size: 12px;
-		/* max-width: 100vw; */
-		max-height: 100vh;
+		overflow-x: hidden;
 	}
 	.bannerText {
 		width: 100%;
@@ -799,7 +842,7 @@ input:checked+.slider:before {
 	}
 	ul.sci li {
 		list-style: none;
-		padding-left: 10%;
+		/* margin-left: 10%; */
 		text-align: center;
 		animation: fadeInBottom 0.5s linear forwards;
 		display: inline-block;
@@ -831,10 +874,13 @@ input:checked+.slider:before {
 }
 
 @media screen and (max-width: 600px) {
-	html {
+	html, body {
+		max-width: 100vw;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
 		font-size: 8px;
-		/* max-width: 100%; */
-		max-height: 100vh;
+		overflow-x: hidden;
 	}
 	/* 
 	body{
@@ -893,7 +939,7 @@ input:checked+.slider:before {
 	}
 	ul.sci li {
 		list-style: none;
-		padding-left: 10%;
+		/* margin-left: 10%; */
 		text-align: center;
 		animation: fadeInBottom 0.5s linear forwards;
 		display: inline-block;
@@ -916,7 +962,17 @@ input:checked+.slider:before {
 		text-align: center;
 		font-size: 3em;
 	}
+	.portfolio {
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.header {
 		display: none;
+	}
+	section {
+		min-height: fit-content;
 	}
 }

@@ -6,11 +6,12 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./public/style/style.css">
 	<link rel="stylesheet" href="./public/style/scroll.css">
+	<link rel="stylesheet" href="./public/style/image.css">
 	<script src="./public/js/theme.js">
-
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<link rel="icon" href="public/img/nerd-512.png">
+	<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 	<title>NerdWalla</title>
 </head>
 
@@ -68,28 +69,22 @@
 	<section id="portfolio" class="portfolio-section hideme">
 		<div class="portfolio container">
 
-			<h2>RECENT PROJECTS</h2>
-			<div class="row">
-				<div class="column module">
-					<a href="https://bhy-sentiment-analyzer.herokuapp.com" target="_blank">
-						<div class="content">
-							<img src="./public/img/analyzer.png" style="width:100%">
-							<hr />
-							<h3>Sentiment Analyzer</h3>
-							<p>Website for analyzing how a business is doing based on the reviews</p>
-						</div>
-					</a>
-				</div>
-				<div class="column module">
-					<a href="http://paradiseislandicecream.com" target="_blank">
-						<div class="content">
-							<img src="./public/img/icecream.png" style="width:100%">
-							<hr />
-							<h3>Paradise Ice Cream</h3>
-							<p>Website for a small business</p><br /><br /><br />
-						</div>
-					</a>
-				</div>
+			<div class="projects-container">
+				<h2>RECENT PROJECTS</h2>
+				<figure class="snip1321 module"><img src="./public/img/analyzer.png" alt="Analyzer" />
+					<figcaption><i class="ion-upload"></i>
+						<h2>Sentiment Analyzer</h2>
+						<br />
+						<h4>Website for analyzing how a business is doing based on the reviews</h4>
+					</figcaption><a href="https://bhy-sentiment-analyzer.herokuapp.com" target="_blank"></a>
+				</figure>
+				<figure class="snip1321 module"><img src="./public/img/icecream.png" alt="Paradise Ice Cream" />
+					<figcaption><i class="ion-stats-bars"></i>
+						<h2>Paradise Ice Cream</h2>
+						<br />
+						<h4>Website for a small business</h4>
+					</figcaption><a href="http://paradiseislandicecream.com" target="_blank"></a>
+				</figure>
 			</div>
 
 		</div>
@@ -103,6 +98,16 @@
 				<div class="contact-column module">
 					<div class="contact-content">
 						<h2>Contact</h2>
+						<!-- <form action="https://send.pageclip.co/qe0wCM2Xocic52O9ZleFNlLsQSUPJ0f0" class="pageclip-form" method="post">
+							 Replace these inputs with your own. Make sure they have a "name" attribute! -->
+							<!-- <input type="text" name="name" value="Roscoe Jones" />
+							<input type="email" name="email" value="roscoe@example.com" />-->
+						  
+							<!-- This button will have a loading spinner. Keep the inner span for best results. -->
+							<!-- <button type="submit" class="pageclip-form__submit">
+							  <span>Send</span>
+							</button>
+						  </form> --> 
 					</div>
 				</div>
 			</div>
@@ -114,20 +119,22 @@
 				</div>
 			</div>
 		</div>
+		<ul class="sci">
+			<li><a href="https://www.linkedin.com/in/narab" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			<li><a href="https://www.instagram.com/nerdwalla/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+			</li>
+			<li><a href="https://github.com/nerdwalla" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+			<li><a href="mailto:nerdwalla@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
+		</ul>
 	</section>
 	<!-- End Contact Section -->
 
 
-	<ul class="sci">
-		<li><a href="www.linkedin.com/in/narab" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-		<li><a href="https://www.instagram.com/nerdwalla/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-		</li>
-		<li><a href="https://github.com/nerdwalla" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-		<li><a href="mailto:nerdwalla@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
-	</ul>
+	
 
 	<script src="./public/js/app.js"></script>
 	<script src="./public/js/scroll.js"></script>
+	<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 
 </html>

@@ -17,3 +17,12 @@ menu_item.forEach((item) => {
 		}
 	});
 });
+
+
+/* Demo purposes only */
+$(".hover").mouseleave(
+	function () {
+	  $(this).removeClass("hover");
+	}
+  );
+  
