@@ -1,7 +1,8 @@
 const menu_item = document.querySelectorAll('.header ul li a');
 
 menu_item.forEach((item) => {
-	item.addEventListener('click', () => {
+	item.addEventListener('click', (e) => {
+		e.preventDefault();
 		if (item.textContent === 'Portfolio') {
 			$('html, body').animate({
 				scrollTop: $("#portfolio").offset().top
